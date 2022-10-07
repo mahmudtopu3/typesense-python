@@ -3,7 +3,7 @@ https://www.convertjson.com/json-to-jsonlines.htm
 https://medium.com/swlh/building-a-search-bar-for-your-gatsbyjs-site-with-typesense-3e277dc33942
 
 
-docker run -i -p 8108:8108 -v/tmp/typesense-server-data/:/data typesense/typesense:0.15.0 --data-dir /data --api-key=xyz --listen-port 8108 --enable-corss
+docker run -i -p 8108:8108 -v/tmp/typesense-server-data/:/data typesense/typesense:0.23.1 --data-dir /data --api-key=xyz --listen-port 8108 --enable-corss
 
 string	String values
 string[]	Array of strings

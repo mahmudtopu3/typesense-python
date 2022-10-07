@@ -39,7 +39,8 @@ search_parameters1 = {
   'sort_by'   : 'ratings_count:desc',
   'page': 1,
   'include_fields': 'title,publication_year',
-  'per_page': 5
+  'per_page': 5,
+  'highlight_full_fields': 'title'
 }
 
 search_parameters2 = {
@@ -79,4 +80,13 @@ fetch("http://0.0.0.0:8108/health", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
+
+  Thanks for the feedback: I'll document this in the next round of updates to the docs.
+
+For now, you've pretty much covered all the supported syntax:
+
+wildcard *
+exclusion of words via -
+phrase match by wrapping the words in quotes
+field:value syntax is only for filtering. To target the fields used for querying, use the query_by param.
 """
